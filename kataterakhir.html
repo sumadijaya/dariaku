@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.....</title>
+  <style>
+    body {
+      font-family: 'Great Vibes', cursive;
+      background: url('https://www.transparenttextures.com/patterns/paper.png'), #f5e8c7;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      color: #2c2c2c;
+      overflow-y: auto;
+      padding-top: 60px;
+    }
+    .letter {
+      background: #fff;
+      width: 80%;
+      max-width: 600px;
+      padding: 40px;
+      border: 2px solid #8b4513;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: justify;
+      line-height: 1.8;
+      position: relative;
+    }
+    .letter::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      border: 2px dashed #8b4513;
+      border-radius: 12px;
+      z-index: -1;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #8b4513;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: clamp(1.5em, 6vw, 2.5em);
+    }
+    p {
+      font-family: 'Lucida Handwriting',cursive;
+      font-size: 150%;
+      margin: 15px 0;
+    }
+    button {
+      padding: 12px 25px;
+      background: #f5e8c7;
+      color: #8b4513;
+      border: 2px solid #8b4513;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-right: 10px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.2em;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(139, 69, 19, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+    }
+    button:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    button:hover {
+      background: #e0d4b7;
+      transform: translateY(-2px);
+    }
+    .signature {
+      font-size: 1.2em;
+      text-align: right;
+      margin-top: 20px;
+      color: #8b4513;
+    }
+    
+    @media (max-width: 600px) {
+      .letter {
+        width: 90%;
+        padding: 20px;
+      }
+      h1 {
+        font-size: clamp(1.2em, 5vw, 2em);
+      }
+      button {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="letter">
+    <h1>Kata terakhir inih penting perhatikan!!</h1>
+    <p>Haii inih kata-kata terakhir hari inih detik inih!,Perhatikan yaahh...</p>
+    <p>"Aku tahu kamu masih ada rasa untuk Aldi.
+       Aku bisa lihat itu dari caramu menyimpan namanya, dari cara matamu berkedip setiap kali dia disebut.
+       Tapi yang paling menyakitkan bukan soal kamu masih mencintainya...
+       Tapi bahwa kamu tidak cukup jujur pada dirimu sendiri—dan padaku.
+       Aku pernah bilang, "Jujur saja, aku bisa terima"...
+      Karena yang kubenci bukan rasa sakitnya, tapi pura-pura tidak merasakan apa-apa...</p>
+    <P>Bagian terpenting Perhatikan yah!!</P>
+    <P>Bibah!!..Akuu sadar kamu orang baik + lucu imut Cantik,aku tahu kook kamu gak jahat,
+      Tapii aku memilih untuk pergi,"PERGI SELAMANYA!!",karena aku tahu kamu tidak mencintaiku sepenuhnyaa!!....</P>
+    <P>Yaaahh,walaupun aku tahu kamu ingin berubahkan!!."tapi maaf hatiku sudah tidak Mencintaimu lagi",
+      aku sudah bener2 kecewa,walaupun kamu berusaha bujuk aku tetap NOLAK!!,"AKU BENER2 SUDAH MUAK HIDUP DENGANMU!!"....
+    </P>
+    <p>Bibah!!..walaupun kamu berdoa ke pada tuhan bahwa aku akan kembali!!..<BR>
+    akuu akan nolak doa kamu ke tuhan juga dengan doa"Ya allah jangan kasih hamba dengan wanita seperti inih aku udah bener2 trauma ya allah"..<BR>
+    Selamat bertempur di jalur langit kita bertolak belakang!!...</p>
+    <p>Penutup!..</p>
+    <P>Bibah..semoga kamu bahagia di jalanmu sendiri,aku akan berdoa semoga kamu selalu bahagia tanpa aku,
+      dan tenang aku akan selalu bahagia tanpa kamu,semoga kita selalu bahagia yah tanpa bersama lagi.....
+    </P>
+
+
+
+    <button onclick="window.location.href='index.html'">Kembali ke Surat Utama</button>
+    <button onclick="showHeart()">Baca Hatiku</button>
+    <div class="signature">Dari EX untuk, [Bibah]</div>
+  </div>
+
+  <script>
+    function showHeart() {
+      alert("Aku gak akan kembali lagi bersamamu.selamanyaa.....");
+      document.getElementById("signature").innerText = "Jangan ganggu aku lagi...., [Bibah]";
+    }
+  </script>
+</body>
+</html>
